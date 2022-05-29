@@ -1,1 +1,27 @@
-ECHO is on.
+body{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.noPadding{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 35px;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+    border-top: solid 2px rgb(100, 100, 100);
+    color: white;
+}
+.footerText{
+    position: absolute;
+    top: 20%;
+    left: 870px;
+    margin-left: auto;
+    margin-right: auto;
+}
