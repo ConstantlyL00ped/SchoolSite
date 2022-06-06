@@ -1,5 +1,6 @@
 :root{
     --underlineWidth: 75px;
+    --hideOrShow: 1;
 }
 
 body{
@@ -39,6 +40,9 @@ main{
     margin-right: auto;
 }
 .menuButton{
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 150px;
     margin-top: 275px;
@@ -57,19 +61,28 @@ main{
     -moz-box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
     box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
 }
+.menuButton:hover{
+    opacity: 0.9;
+}
 .buttonText{
     position: absolute;
     width: 100%;
     top: 60.5px;
 }
-.buttonText::after{
-    content: '';
-    width: var(--underlineWidth);
-    height: 2px;
+.underline{
+    transition: opacity 0.5s;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin: auto
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    opacity: 0;
+}
+.underlineDiv{
+    height: 10px;
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    width: 100%;
 }
 footer{
     position: absolute;
@@ -93,4 +106,13 @@ footer{
 }
 .colorRichBlack{
     background-color: #32292F;
+}
+.shown{
+    opacity: 1 !important;
+}
+.bigger{
+    width: 100px;
+}
+.smaller{
+    width: 58px;
 }
