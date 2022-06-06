@@ -17,10 +17,6 @@ function hiddeUnderline(evt){
     }
 }
 
-function getID(id){
-    showUnderline(id.classList[1] == "colorRichBlack");
-}
-
 for(let x = 0; x <= 1; x++){
     mainMenuButtons[x].myParam = x;
     mainMenuButtons[x].addEventListener("mouseover", showUnderline)
