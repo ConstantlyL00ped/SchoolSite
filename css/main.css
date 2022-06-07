@@ -16,16 +16,14 @@ body{
 .upperFooterText{
     font-size: 20px;
     position: absolute;
-    top: 5.5px;
+    top: 10px;
     width: 100%;
 }
 .upperFooter{
     width: 100%;
     text-align: center;
-    height: 34px;
+    height: 45px;
     position: relative;
-    background-color: #BA5A31;
-    border-bottom: solid 2px #8d4324;
     color: white;
 }
 main{
@@ -88,10 +86,8 @@ footer{
     position: absolute;
     bottom: 0;
     height: 34px;
-    background-color: #BA5A31;
     width: 100%;
     text-align: center;
-    border-top: solid 2px #8d4324;
     color: white;
 }
 .footerText{
@@ -100,9 +96,6 @@ footer{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-.colorSinopia{
-    background-color: #BA5A31;
 }
 .colorRichBlack{
     background-color: #32292F;
