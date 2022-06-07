@@ -17,8 +17,18 @@ function hiddeUnderline(evt){
     }
 }
 
+function changeMenu(evt){
+    if(evt.currentTarget.myParam == 0){
+        window.location.href = "file:///E:/kod/stronaDoSzkoly/stuffToLearn.html" //Change file path.
+    }else{
+        window.location.href = "file:///E:/kod/stronaDoSzkoly/homeworks.html" //Also.
+    }
+}
+
 for(let x = 0; x <= 1; x++){
     mainMenuButtons[x].myParam = x;
     mainMenuButtons[x].addEventListener("mouseover", showUnderline)
     mainMenuButtons[x].addEventListener("mouseleave", hiddeUnderline)
+    mainMenuButtons[x].addEventListener("click", changeMenu)
 }
+

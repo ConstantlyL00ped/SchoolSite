@@ -2,7 +2,9 @@
     --underlineWidth: 75px;
     --hideOrShow: 1;
 }
-
+html{
+    font-family: 'Lato', sans-serif;
+}
 body{
     position: relative;
     height: 100vh;
@@ -25,6 +27,7 @@ body{
     height: 45px;
     position: relative;
     color: white;
+    border-bottom: solid 3px rgba(12, 12, 12, 1);
 }
 main{
     height: 100%;
@@ -48,16 +51,11 @@ main{
     color: white;
     font-size: 25px;
     position: relative;
-    -webkit-box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
-    -moz-box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
-    box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
+    border: solid 4px rgba(12, 12, 12, 1);
     cursor: pointer;
 }
 .menuButton:first-child{
     margin-right: 200px;
-    -webkit-box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
-    -moz-box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
-    box-shadow: 2px 2px 0px 2px rgba(12, 12, 12, 1);
 }
 .menuButton:hover{
     opacity: 0.9;
@@ -65,7 +63,7 @@ main{
 .buttonText{
     position: absolute;
     width: 100%;
-    top: 60.5px;
+    top: 60px;
 }
 .underline{
     transition: opacity 0.5s;
@@ -89,6 +87,7 @@ footer{
     width: 100%;
     text-align: center;
     color: white;
+    border-top: solid 3px rgba(12, 12, 12, 1);
 }
 .footerText{
     position: absolute;
@@ -104,8 +103,8 @@ footer{
     opacity: 1 !important;
 }
 .bigger{
-    width: 100px;
+    width: 110px;
 }
 .smaller{
-    width: 58px;
+    width: 68px;
 }
