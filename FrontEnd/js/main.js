@@ -1,5 +1,5 @@
 const mainMenuButtons = document.getElementsByClassName("menuButton");
-const mainMenuButtonUnderline = document.getElementsByClassName("underline")
+const mainMenuButtonUnderline = document.getElementsByClassName("underline");
 
 function showUnderline(evt){
     if(evt.currentTarget.myParam == 0){
@@ -19,9 +19,9 @@ function hiddeUnderline(evt){
 
 function changeMenu(evt){
     if(evt.currentTarget.myParam == 0){
-        window.location.href = "file:///E:/kod/stronaDoSzkoly/stuffToLearn.html" //Change file path.
+        window.location.href = "file:///E:/kod/stronaDoSzkoly/FrontEnd/stuffToLearn.html" //Change file path.
     }else{
-        window.location.href = "file:///E:/kod/stronaDoSzkoly/homeworks.html" //Also.
+        window.location.href = "file:///E:/kod/stronaDoSzkoly/FrontEnd/homeworks.html" //Also.
     }
 }
 

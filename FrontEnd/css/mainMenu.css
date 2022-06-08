@@ -1,38 +1,3 @@
-:root{
-    --underlineWidth: 75px;
-    --hideOrShow: 1;
-}
-html{
-    font-family: 'Lato', sans-serif;
-}
-body{
-    position: relative;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-.noPadding{
-    padding: 0;
-    margin: 0;
-}
-.upperFooterText{
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    width: 100%;
-}
-.upperFooter{
-    width: 100%;
-    text-align: center;
-    height: 45px;
-    position: relative;
-    color: white;
-    border-bottom: solid 3px rgba(12, 12, 12, 1);
-}
-main{
-    height: 100%;
-    width: 100%;
-}
 .mainMenu{
     display: flex;
     flex-direction: row;
@@ -79,25 +44,6 @@ main{
     top: 90px;
     text-align: center;
     width: 100%;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    height: 34px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    border-top: solid 3px rgba(12, 12, 12, 1);
-}
-.footerText{
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.colorRichBlack{
-    background-color: #32292F;
 }
 .shown{
     opacity: 1 !important;

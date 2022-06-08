@@ -1,0 +1,72 @@
+.subjectsMenu{
+    margin: 45px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+}
+.menuButton{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: opacity 0.8s;
+    margin: 30px;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border: solid 2px rgba(12, 12, 12, 1);
+    cursor: pointer;
+}
+.underline{
+    position: absolute;
+    transition: opacity 0.5s;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    opacity: 0;
+}
+.shown{
+    opacity: 1 !important;
+}
+.menuButton:hover{
+    opacity: 0.8;
+}
+.centerButtonText{
+    margin: 45px;
+}
+.lastMenuButton{
+    width: 50% !important;
+    margin: auto;
+    margin-top: 30px !important;
+}
+.colorGrey{
+    background-color: #889696;
+}
+.colorGreenGrey{
+    background-color: #5F7470;
+}
+.colorBlue{
+    background-color: #2E4057;
+}
+.colorBlueGrey{
+    background-color: #7A6563;
+}
+.colorPurple{
+    background-color: #32213A;
+}
+.colorBlack{
+    background-color: #2F2D2E;
+}
+.colorPurpleGrey{
+    background-color: #383B53;
+}
