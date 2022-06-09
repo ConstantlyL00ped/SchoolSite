@@ -1,34 +1,33 @@
-const mainMenuButtons = document.getElementsByClassName("menuButton");
-const mainMenuButtonUnderline = document.getElementsByClassName("underline");
+const menuButtons = document.getElementsByClassName("menuButton");
+const underlines = document.getElementsByClassName("underline");
+
+for(let button = 0; button < menuButtons.length; button++){
+    menuButtons[button].myParam = underlines[button].classList;
+    menuButtons[button].addEventListener("mouseover", showUnderline)
+    menuButtons[button].addEventListener("mouseleave", hiddeUnderline)
+}
 
 function showUnderline(evt){
-    if(evt.currentTarget.myParam == 0){
-        mainMenuButtonUnderline[0].classList.add("shown");
-    }else{
-        mainMenuButtonUnderline[1].classList.add("shown");
-    }
+    evt.currentTarget.myParam.add("shown")
 }
 
 function hiddeUnderline(evt){
-    if(evt.currentTarget.myParam == 0){
-        mainMenuButtonUnderline[0].classList.remove("shown");
-    }else{
-        mainMenuButtonUnderline[1].classList.remove("shown");
-    }
+    evt.currentTarget.myParam.remove("shown")
 }
 
 function changeMenu(evt){
-    if(evt.currentTarget.myParam == 0){
+    console.log(123)
+    if(evt.currentTarget.secondParam == 0){
         window.location.href = "file:///E:/kod/stronaDoSzkoly/FrontEnd/stuffToLearn.html" //Change file path.
     }else{
         window.location.href = "file:///E:/kod/stronaDoSzkoly/FrontEnd/homeworks.html" //Also.
     }
 }
 
-for(let x = 0; x <= 1; x++){
-    mainMenuButtons[x].myParam = x;
-    mainMenuButtons[x].addEventListener("mouseover", showUnderline)
-    mainMenuButtons[x].addEventListener("mouseleave", hiddeUnderline)
-    mainMenuButtons[x].addEventListener("click", changeMenu)
+if(window.location.href == "file:///E:/kod/stronaDoSzkoly/FrontEnd/main.html"){ //Too.
+    for(let x = 0; x <= 1; x++){
+        menuButtons[x].secondParam = x;
+        menuButtons[x].addEventListener("click", changeMenu)
+    }
 }
 

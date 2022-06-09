@@ -30,8 +30,8 @@ main{
     border-bottom: solid 3px rgba(12, 12, 12, 1);
 }
 footer{
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0 !important;
     height: 34px;
     width: 100%;
     text-align: center;
