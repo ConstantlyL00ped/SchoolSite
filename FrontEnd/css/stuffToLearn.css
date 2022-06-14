@@ -1,30 +1,38 @@
 .subjectsMenu{
-    margin: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 .menuContainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    position: relative;
 }
 .menuButton{
     display: flex;
     flex-direction: column;
     position: relative;
     transition: opacity 0.8s;
-    margin: 30px;
-    width: 100%;
+    margin-top: 45px !important;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    min-width: 150px;
+    max-width: 510px;
+    width: 70vw !important;
     height: 120px;
     text-align: center;
     color: white;
     font-size: 25px;
     border: solid 2px rgba(12, 12, 12, 1);
     cursor: pointer;
+}
+.lastMenuButton{
+    margin-bottom: 45px !important;
 }
 .placeholder{
     position: absolute;
@@ -34,12 +42,75 @@
 .underline{
     transition: opacity 0.5s;
     margin: 0;
-    width: 100px;
+    width: 20%;
+    min-width: 100px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     height: 3px;
     opacity: 0;
+}
+@media only screen and (max-width: 1375px){
+    .movePageDownButton{
+        display: none !important;
+    }
+}
+@media only screen and (max-height: 850px){
+    .subjectsMenu{
+        margin-top: 0px;
+        gap: 0px;
+    }
+}
+@media only screen and (max-width: 850px){
+    .centerButtonText{
+        font-size: 20px;
+    }
+    .underline{
+        width: 60px;
+    }
+}
+@media only screen and (max-width: 850px){
+    .menuContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuButton{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.movePageDownButton{
+    text-align: center;
+    transition: opacity 0.5s;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background-color: #1d1128;
+    right: 65px;
+    bottom: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.arrowIMG{
+    width: 70%;
+    padding-top: 10px;
+}
+.centerDiv{
+    margin-left: auto;
+    margin-right: auto;
+}
+.movePageDownButton:hover{
+    opacity: 0.7;
+}
+.geography{
+    width: 25% !important;
+}
+.math{
+    width: 30%;
 }
 .shown{
     opacity: 1 !important;
@@ -52,9 +123,8 @@
     margin-bottom: 5px;
 }
 .lastMenuButton{
-    width: 50% !important;
+    width: 50%;
     margin: auto;
-    margin-top: 30px !important;
 }
 .colorGrey{
     background-color: #889696;
