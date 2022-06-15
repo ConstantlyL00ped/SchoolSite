@@ -1,17 +1,20 @@
 .mainMenu{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 .menuButton{
     transition: opacity 0.5s;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 40%;
+    max-width: 510px;
     height: 150px;
-    margin-top: 275px;
+    margin-top: 27vh;
     text-align: center;
     color: white;
     font-size: 25px;
@@ -20,7 +23,28 @@
     cursor: pointer;
 }
 .menuButton:first-child{
-    margin-right: 200px;
+    margin-right: 10vw;
+}
+@media only screen and (max-width: 850px){
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .menuButton{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 13vh;
+        max-width: 510px;
+        width: 70vw;
+    }
+    .menuButton:first-child{
+        margin-right: auto !important;
+    }
+    .menuButton:last-child{
+        margin-bottom: 20vh;
+    }
 }
 .menuButton:hover{
     opacity: 0.9;
