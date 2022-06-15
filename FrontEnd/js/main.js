@@ -16,7 +16,6 @@ function hiddeUnderline(evt){
 }
 
 function changeMenu(evt){
-    console.log(123)
     if(evt.currentTarget.secondParam == 0){
         window.location.href = "file:///E:/kod/stronaDoSzkoly/FrontEnd/stuffToLearn.html" //Change file path.
     }else{

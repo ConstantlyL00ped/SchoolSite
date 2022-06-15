@@ -5,6 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .menuButton{
     transition: opacity 0.5s;
@@ -29,6 +30,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-bottom: 0;
     }
     .menuButton{
         margin-left: auto;
@@ -39,6 +41,9 @@
     }
     .menuButton:first-child{
         margin-right: auto !important;
+    }
+    .menuButton:last-child{
+        margin-bottom: 20vh;
     }
 }
 .menuButton:hover{
