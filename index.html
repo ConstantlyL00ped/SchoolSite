@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="SiteInfo" content="A small site to exchange information about homeworks." />
+        <link rel="stylesheet" type="text/css" href="everySiteCSS.css">
+        <link rel="stylesheet" type="text/css" href="stuffToLearn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+        <script src="main.js" defer></script>
+        <script src="stuffToLearn.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="loginFormContainer">
+                <div id="closeLoginForm">X</div>
+                <form method="POST" class="loginForm">
+                    <label for="login">Login</label><br>
+                    <input type="text" name="login" class="inputArea"><br>
+                    <label for="pass">Hasło</label><br>
+                    <input type="password" name="pass" class="inputArea"><br>
+                    <input type="submit" value="Login" class="sendForm"></button>
+                </form>
+            </section>
+            <section class="upperFooter colorRichBlack">
+                <article>
+                    <p class="noPadding upperFooterText">What do you want to know?</p>
+                    <div class="loginButton">Login in.</div>
+                </article>
+            </section>
+            <section class="subjectsMenu">
+                <article class="menuContainer">
+                    <div class="menuButton colorGrey">
+                        <p class="centerButtonText">J. Polski</p>
+                        <p class="underline"></p>
+                    </div>
+                    <div class="menuButton colorGreenGrey">
+                        <p class="centerButtonText">J. Angielski</p>
+                        <p class="underline geography"></p>
+                    </div>
+                </article>
+                <article class="menuContainer">
+                    <div class="menuButton colorBlue">
+                        <p class="centerButtonText">Matematyka</p>
+                        <p class="underline math"></p>
+                    </div>
+                    <div class="menuButton colorBlueGrey">
+                        <p class="centerButtonText">Biologia</p>
+                        <p class="underline"></p>
+                    </div>
+                </article>
+                <article class="menuContainer">
+                    <div class="menuButton colorPurple">
+                        <p class="centerButtonText">Chemia</p>
+                        <p class="underline"></p>
+                    </div>
+                    <div class="menuButton colorBlack ">
+                        <p class="centerButtonText">Geografia</p>
+                        <p class="underline geography"></p>
+                    </div>
+                </article>
+                <article class="menuContainer">
+                    <div class="menuButton colorPurpleGrey lastMenuButton">
+                        <p class="centerButtonText">Historia</p>
+                        <p class="underline"></p>
+                    </div>
+                </article>
+            </section>
+            <div class="movePageDownButton">
+                <div class="centerDiv">
+                    <img class="arrowIMG" src="images/arrowIMG.png">
+                </div>
+            </div>
+        </main>
+    </body>
+    <footer class="colorRichBlack">
+        <div class="centerContent">
+            <p class="noPadding footerText "></p>
+        </div>
+    </footer>
+</html>

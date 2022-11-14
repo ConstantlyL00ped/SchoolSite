@@ -1,0 +1,83 @@
+.mainMenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.menuButton{
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 510px;
+    height: 150px;
+    margin-top: 27vh;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    border: solid 4px rgba(12, 12, 12, 1);
+    cursor: pointer;
+    opacity:  1;
+}
+.menuButton:first-child{
+    margin-right: 10vw;
+}
+@media only screen and (max-width: 850px){
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .menuButton{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 13vh;
+        max-width: 510px;
+        width: 70vw;
+    }
+    .menuButton:first-child{
+        margin-right: auto !important;
+    }
+    .menuButton:last-child{
+        margin-bottom: 20vh;
+    }
+}
+.menuButton:hover{
+    opacity: 0.9;
+}
+.buttonText{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+.underline{
+    transition: opacity 0.5s;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    opacity: 0;
+}
+.underlineDiv{
+    height: 10px;
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    width: 100%;
+}
+.shown{
+    opacity: 1 !important;
+}
+.bigger{
+    width: 110px;
+}
+.smaller{
+    width: 68px;
+}
+
+
